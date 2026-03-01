@@ -8,6 +8,7 @@ import BookAppointment from './components/BookAppointment';
 import BentoGallery from './components/BentoGallery';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       </main>
 
       <Footer />
+
+      {/* Floating WhatsApp Chat Button */}
+      <WhatsAppButton />
     </div>
   );
 }

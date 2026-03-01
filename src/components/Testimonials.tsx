@@ -43,24 +43,24 @@ const Testimonials = () => {
     }, { scope: containerRef });
 
     return (
-        <section id="reviews" ref={containerRef} className="py-24 bg-black/40 border-t border-white/5 relative z-10">
-            <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-16 space-y-4">
-                    <h2 className="text-4xl md:text-5xl font-serif text-white uppercase tracking-wider">
+        <section id="reviews" ref={containerRef} className="py-16 md:py-24 bg-black/40 border-t border-white/5 relative z-10">
+            <div className="max-w-7xl mx-auto px-4 md:px-6">
+                <div className="text-center mb-10 md:mb-16 space-y-3 md:space-y-4">
+                    <h2 className="text-3xl md:text-5xl font-serif text-white uppercase tracking-wider">
                         Client <span className="italic text-champagne lowercase">Testimonials</span>
                     </h2>
-                    <p className="font-sans text-champagne/60">Experiences from our valued guests.</p>
+                    <p className="font-sans text-champagne/60 text-sm md:text-base">Experiences from our valued guests.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-10 md:mb-16">
                     {reviews.map((review, i) => (
-                        <div key={i} className="review-card bg-charcoal/30 border border-white/5 rounded-[2rem] p-8 flex flex-col items-center text-center transition-colors hover:border-champagne/20">
-                            <div className="flex gap-1 mb-6 text-champagne">
+                        <div key={i} className="review-card bg-charcoal/30 border border-white/5 rounded-2xl md:rounded-[2rem] p-6 md:p-8 flex flex-col items-center text-center transition-colors hover:border-champagne/20">
+                            <div className="flex gap-1 mb-4 md:mb-6 text-champagne">
                                 {[...Array(5)].map((_, j) => (
-                                    <Star key={j} size={20} fill="currentColor" strokeWidth={0} />
+                                    <Star key={j} size={16} fill="currentColor" strokeWidth={0} />
                                 ))}
                             </div>
-                            <p className="font-serif italic text-lg text-white mb-8 flex-1">"{review.text}"</p>
+                            <p className="font-serif italic text-base md:text-lg text-white mb-6 md:mb-8 flex-1">"{review.text}"</p>
                             <p className="font-sans uppercase tracking-[0.2em] text-xs text-champagne/80">— {review.name}</p>
                         </div>
                     ))}
@@ -71,7 +71,7 @@ const Testimonials = () => {
                         href="https://share.google/ZcO8RcQG0mqXgkqRl"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block px-10 py-5 rounded-full border border-champagne text-champagne font-sans uppercase tracking-widest text-xs transition-colors hover:bg-champagne hover:text-obsidian"
+                        className="inline-block px-8 md:px-10 py-4 md:py-5 rounded-full border border-champagne text-champagne font-sans uppercase tracking-widest text-xs transition-colors hover:bg-champagne hover:text-obsidian"
                     >
                         Read Our Google Reviews
                     </a>
