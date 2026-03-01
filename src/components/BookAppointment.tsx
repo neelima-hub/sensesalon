@@ -1,4 +1,3 @@
-import React, { useRef, useState, useEffect } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { X } from 'lucide-react';
