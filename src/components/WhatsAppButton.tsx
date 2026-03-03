@@ -1,4 +1,4 @@
-
+import React, { useState, useEffect, useRef } from "react";
 const WHATSAPP_NUMBER = '00971567973569';
 const WHATSAPP_MESSAGE = encodeURIComponent('Hello! I would like to book an appointment at Senses Salon JLT.');
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
